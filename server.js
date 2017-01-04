@@ -46,7 +46,6 @@ app.get('/ncco', (req, res, next) => {
         "eventUrl": [
           `https://${process.env.URL}/events`
         ],
-        "from": req.query.phoneNumber,
         "endpoint": [{
           "type": "websocket",
           "uri": `ws://${process.env.URL}`,
